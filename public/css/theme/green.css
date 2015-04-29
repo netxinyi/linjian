@@ -48,10 +48,36 @@
 	[1. IMPORT FONTS]
 	==================
 */
-@import url('font-awesome.css');
-@import url('animate.css');
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url('/lib/bootstrap/css/font-awesome.css');
+@import url('../common/animate.css');
 
+/*
+	Google Fonts
+*/
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Light'), local('OpenSans-Light'), url(/lib/bootstrap/fonts/OpenSans-Light.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(/lib/bootstrap/fonts/OpenSans.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(/lib/bootstrap/fonts/OpenSans-Semibold.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(/lib/bootstrap/fonts/OpenSans-Bold.woff) format('woff');
+}
 
 /* 
 	==================
@@ -542,7 +568,7 @@ blockquote {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: url(../img/pattern.png) 0 0 repeat;
+	background: url(/img/tmp/pattern.png) 0 0 repeat;
 	width: 100%;
 	height: 100%;
 	z-index: 1;
@@ -1032,7 +1058,7 @@ blockquote {
 */
 #testimoni{
 	width: 100%;
-	background: url(../img/img02.jpg) no-repeat center center transparent;
+	background: url(/img/tmp/img02.jpg) no-repeat center center transparent;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/s2.png',sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/s2.png',sizingMethod='scale')";
 	background-size:cover !important;
