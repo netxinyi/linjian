@@ -8,7 +8,9 @@
     <meta name="description" content="@yield('keywords',Config::get('site.default-description',''))">
     <meta name="author" content="{{Config::get('site.author','')}}">
     @yield('meta')
-    <title>@yield('title',Config::get('site.site-name') ? : ''){{Config::has('site.site-name') ? ' - '.Config::get('site.site-name') : ''}}</title>
+    <title>
+
+        @yield('title','中国最大的鹦鹉繁殖基地') - {{Config::get('site.site-name')}}</title>
 
     <link rel="shortcut icon" href="img/favicon.png">
     @yield('first-css')
