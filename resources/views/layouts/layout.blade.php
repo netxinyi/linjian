@@ -9,8 +9,8 @@
     <meta name="author" content="{{Config::get('site.author','')}}">
     @yield('meta')
     <title>
-
-        @yield('title','中国最大的鹦鹉繁殖基地') - {{Config::get('site.site-name')}}</title>
+        @yield('title','中国最大的鹦鹉繁殖基地') - {{Config::get('site.site-name')}}
+    </title>
 
     <link rel="shortcut icon" href="img/favicon.png">
     @yield('first-css')
