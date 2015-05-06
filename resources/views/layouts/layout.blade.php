@@ -22,7 +22,7 @@
     @yield('header')
 </head>
 
-<body>
+<body @yield('body-attr')>
 @yield('head')
 @yield('body')
 @yield('foot')

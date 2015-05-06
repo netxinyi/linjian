@@ -33,6 +33,8 @@
     <script src="/js/admin/minimal.min.js"></script>
 @stop
 
+@section('body-attr')class="bg-1"@stop
+
 @section('head')
     <!-- Preloader -->
     <div class="mask"><div id="loader"></div></div>
