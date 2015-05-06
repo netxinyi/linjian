@@ -22,6 +22,6 @@ Route::controllers([
 
 Route::group(array('prefix'=>'admin','namespace'=>'Admin'), function(){
 
-	Route::get('/',array('as'=>'index','uses'=>'AdminController@showIndex'));
-	Route::get('/login',array('as'=>'login','uses'=>'AdminController@showLogin'));
+	Route::get('/',array('as'=>'admin.index','uses'=>'AdminController@showIndex'));
+	Route::get('/login',array('as'=>'admin.login','uses'=>'AdminController@showLogin'));
 });

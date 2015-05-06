@@ -43,35 +43,17 @@
     <div id="wrap">
         <!-- Make page fluid -->
         <div class="row">
-            @include('common.admin.nav')
+            @include('admin.common.nav')
             <!-- Page content -->
             <div id="content" class="col-md-12">
-                <!-- page header -->
-                <div class="pageheader">
 
-
-                    <h2><i class="fa fa-tachometer"></i> Dashboard
-                        <span>// Place subtitle here...</span></h2>
-
-
-                    <div class="breadcrumbs">
-                        <ol class="breadcrumb">
-                            <li>You are here</li>
-                            <li><a href="index.html">Minimal</a></li>
-                            <li class="active">Dashboard</li>
-                        </ol>
-                    </div>
-
-
-                </div>
-                <!-- /page header -->
 
 @stop
 
 @section('foot')
             </div>
             <!-- Page content end -->
-            @include('common.admin.mmenu')
+            @include('admin.common.mmenu')
         </div>
         <!-- Make page fluid-->
     </div>
