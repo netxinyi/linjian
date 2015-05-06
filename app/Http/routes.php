@@ -20,6 +20,8 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::group(array('prefix'=>'admin'), function(){
+Route::group(array('prefix'=>'admin','namespace'=>'Admin'), function(){
 
+	Route::get('/',array('as'=>'index','uses'=>'AdminController@showIndex'));
+	Route::get('/login',array('as'=>'login','uses'=>'AdminController@showLogin'));
 });

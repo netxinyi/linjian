@@ -44,32 +44,32 @@ body {
     overflow: auto;
     margin-right: 0; }
   body.bg-1 {
-    background-image: url(../images/noise.png), url(../images/backgrounds/1.jpg);
+    background-image: url(/img/admin/noise.png), url(/img/admin/backgrounds/1.jpg);
     background-repeat: repeat, no-repeat;
     background-position: left top;
     background-size: auto, cover; }
   body.bg-2 {
-    background-image: url(../images/noise.png), url(../images/backgrounds/2.jpg);
+    background-image: url(/img/admin/noise.png), url(/img/admin/backgrounds/2.jpg);
     background-repeat: repeat, no-repeat;
     background-position: left top;
     background-size: auto, cover; }
   body.bg-3 {
-    background-image: url(../images/noise.png), url(../images/backgrounds/3.jpg);
+    background-image: url(/img/admin/noise.png), url(/img/admin/backgrounds/3.jpg);
     background-repeat: repeat, no-repeat;
     background-position: left top;
     background-size: auto, cover; }
   body.bg-4 {
-    background-image: url(../images/noise.png), url(../images/backgrounds/4.jpg);
+    background-image: url(/img/admin/noise.png), url(/img/admin/backgrounds/4.jpg);
     background-repeat: repeat, no-repeat;
     background-position: left top;
     background-size: auto, cover; }
   body.bg-5 {
-    background-image: url(../images/noise.png), url(../images/backgrounds/5.jpg);
+    background-image: url(/img/admin/noise.png), url(/img/admin/backgrounds/5.jpg);
     background-repeat: repeat, no-repeat;
     background-position: left top;
     background-size: auto, cover; }
   body.bg-6 {
-    background-image: url(../images/noise.png), url(../images/backgrounds/6.jpg);
+    background-image: url(/img/admin/noise.png), url(/img/admin/backgrounds/6.jpg);
     background-repeat: repeat, no-repeat;
     background-position: left top;
     background-size: auto, cover; }
@@ -89,7 +89,7 @@ body {
     -moz-box-sizing: content-box;
     box-sizing: content-box; }
     body .mask #loader {
-      background: url(../images/loader.gif) center center no-repeat;
+      background: url(/img/admin/loader.gif) center center no-repeat;
       height: 15px;
       width: 15px;
       left: 50%;
@@ -118,7 +118,7 @@ body {
       display: none; }
 
 .el-reloader {
-  background: url(../images/loader.gif) center center no-repeat;
+  background: url(/img/admin/loader.gif) center center no-repeat;
   height: 15px;
   width: 15px;
   left: 75%;
@@ -168,7 +168,7 @@ body .navbar {
       padding-left: 20px;
       height: 45px;
       line-height: 45px;
-      background: url(../images/minimal-logo.png) no-repeat 0 16px; }
+      background: url(/img/admin/minimal-logo.png) no-repeat 0 16px; }
       body .navbar .navbar-header .navbar-brand img {
         vertical-align: top; }
     body .navbar .navbar-header .sidebar-collapse {
@@ -406,17 +406,17 @@ body .navbar {
                   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
                   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3); }
                 body .navbar .navbar-nav.quick-actions .dropdown .dropdown-menu.settings > li #color-schemes > li > a.bg-1 {
-                  background: url(../images/backgrounds/thumbs/1.jpg) center center no-repeat; }
+                  background: url(/img/admin/backgrounds/thumbs/1.jpg) center center no-repeat; }
                 body .navbar .navbar-nav.quick-actions .dropdown .dropdown-menu.settings > li #color-schemes > li > a.bg-2 {
-                  background: url(../images/backgrounds/thumbs/2.jpg) center center no-repeat; }
+                  background: url(/img/admin/backgrounds/thumbs/2.jpg) center center no-repeat; }
                 body .navbar .navbar-nav.quick-actions .dropdown .dropdown-menu.settings > li #color-schemes > li > a.bg-3 {
-                  background: url(../images/backgrounds/thumbs/3.jpg) center center no-repeat; }
+                  background: url(/img/admin/backgrounds/thumbs/3.jpg) center center no-repeat; }
                 body .navbar .navbar-nav.quick-actions .dropdown .dropdown-menu.settings > li #color-schemes > li > a.bg-4 {
-                  background: url(../images/backgrounds/thumbs/4.jpg) center center no-repeat; }
+                  background: url(/img/admin/backgrounds/thumbs/4.jpg) center center no-repeat; }
                 body .navbar .navbar-nav.quick-actions .dropdown .dropdown-menu.settings > li #color-schemes > li > a.bg-5 {
-                  background: url(../images/backgrounds/thumbs/5.jpg) center center no-repeat; }
+                  background: url(/img/admin/backgrounds/thumbs/5.jpg) center center no-repeat; }
                 body .navbar .navbar-nav.quick-actions .dropdown .dropdown-menu.settings > li #color-schemes > li > a.bg-6 {
-                  background: url(../images/backgrounds/thumbs/6.jpg) center center no-repeat; }
+                  background: url(/img/admin/backgrounds/thumbs/6.jpg) center center no-repeat; }
           body .navbar .navbar-nav.quick-actions .dropdown .dropdown-menu.settings > li .form-group label {
             color: #717171;
             font-size: 12px;
@@ -587,17 +587,17 @@ body .navbar .navbar-nav.side-nav {
                       -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
                       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3); }
                     body .navbar .navbar-nav.side-nav > li.collapsed-content > ul > li.user > .settings > li #color-schemes > li > a.bg-1 {
-                      background: url(../images/backgrounds/thumbs/1.jpg) center center no-repeat; }
+                      background: url(/img/admin/backgrounds/thumbs/1.jpg) center center no-repeat; }
                     body .navbar .navbar-nav.side-nav > li.collapsed-content > ul > li.user > .settings > li #color-schemes > li > a.bg-2 {
-                      background: url(../images/backgrounds/thumbs/2.jpg) center center no-repeat; }
+                      background: url(/img/admin/backgrounds/thumbs/2.jpg) center center no-repeat; }
                     body .navbar .navbar-nav.side-nav > li.collapsed-content > ul > li.user > .settings > li #color-schemes > li > a.bg-3 {
-                      background: url(../images/backgrounds/thumbs/3.jpg) center center no-repeat; }
+                      background: url(/img/admin/backgrounds/thumbs/3.jpg) center center no-repeat; }
                     body .navbar .navbar-nav.side-nav > li.collapsed-content > ul > li.user > .settings > li #color-schemes > li > a.bg-4 {
-                      background: url(../images/backgrounds/thumbs/4.jpg) center center no-repeat; }
+                      background: url(/img/admin/backgrounds/thumbs/4.jpg) center center no-repeat; }
                     body .navbar .navbar-nav.side-nav > li.collapsed-content > ul > li.user > .settings > li #color-schemes > li > a.bg-5 {
-                      background: url(../images/backgrounds/thumbs/5.jpg) center center no-repeat; }
+                      background: url(/img/admin/backgrounds/thumbs/5.jpg) center center no-repeat; }
                     body .navbar .navbar-nav.side-nav > li.collapsed-content > ul > li.user > .settings > li #color-schemes > li > a.bg-6 {
-                      background: url(../images/backgrounds/thumbs/6.jpg) center center no-repeat; }
+                      background: url(/img/admin/backgrounds/thumbs/6.jpg) center center no-repeat; }
               body .navbar .navbar-nav.side-nav > li.collapsed-content > ul > li.user > .settings > li .form-group label {
                 color: #717171;
                 font-size: 12px;
@@ -1335,7 +1335,7 @@ body #content .tile {
         body #content .tile .tile-footer.color.transparent-black.textured,
         body #content .tile .tile-left-side.color.transparent-black.textured,
         body #content .tile .tile-right-side.color.transparent-black.textured {
-          background: rgba(0, 0, 0, 0.3) url(../images/dot_pattern.png) repeat; }
+          background: rgba(0, 0, 0, 0.3) url(/img/admin/dot_pattern.png) repeat; }
       body #content .tile .tile-header.color.transparent-white,
       body #content .tile .tile-widget.color.transparent-white,
       body #content .tile .tile-body.color.transparent-white,
@@ -1401,7 +1401,7 @@ body #content .tile {
   body #content .tile.color.transparent-black {
     background-color: rgba(0, 0, 0, 0.3); }
     body #content .tile.color.transparent-black.textured {
-      background: rgba(0, 0, 0, 0.3) url(../images/dot_pattern.png) repeat; }
+      background: rgba(0, 0, 0, 0.3) url(/img/admin/dot_pattern.png) repeat; }
   body #content .tile.color.transparent-white {
     background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.1); }
@@ -7593,7 +7593,7 @@ body #content .modal .modal-dialog .modal-content select.chosen-transparent + .c
   color: rgba(255, 255, 255, 0.8); }
   body #content select.chosen-transparent + .chosen-container.chosen-container-single .chosen-single div b,
   body #content .modal .modal-dialog .modal-content select.chosen-transparent + .chosen-container.chosen-container-single .chosen-single div b {
-    background: url(../images/chosen-sprite-transparent.png) no-repeat 0 2px; }
+    background: url(/img/admin/chosen-sprite-transparent.png) no-repeat 0 2px; }
 body #content select.chosen-transparent + .chosen-container.chosen-container-single.chosen-container-active .chosen-single,
 body #content .modal .modal-dialog .modal-content select.chosen-transparent + .chosen-container.chosen-container-single.chosen-container-active .chosen-single {
   background-color: rgba(0, 0, 0, 0.5); }
@@ -9497,7 +9497,7 @@ a.submit:hover {
         font-size: 32px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
       .modal .modal-content .modal-header button.close {
-        background: url(../images/modal-close.png) left center no-repeat;
+        background: url(/img/admin/modal-close.png) left center no-repeat;
         position: absolute;
         top: -30px;
         right: 0;
@@ -9508,7 +9508,7 @@ a.submit:hover {
         text-shadow: none;
         padding-left: 23px; }
         .modal .modal-content .modal-header button.close:hover {
-          background: url(../images/modal-close-hover.png) left center no-repeat;
+          background: url(/img/admin/modal-close-hover.png) left center no-repeat;
           color: #418bca; }
         .modal .modal-content .modal-header button.close:focus {
           outline: none; }
@@ -12259,9 +12259,9 @@ table tbody.files > tr > td {
     .timeline > li.color.transparent-black > .el-container > .side {
       background-color: rgba(0, 0, 0, 0.6); }
     .timeline > li.color.transparent-black.textured > .el-container > .content {
-      background: rgba(0, 0, 0, 0.3) url(../images/dot_pattern.png) repeat; }
+      background: rgba(0, 0, 0, 0.3) url(/img/admin/dot_pattern.png) repeat; }
     .timeline > li.color.transparent-black.textured > .el-container > .side {
-      background: rgba(0, 0, 0, 0.6) url(../images/dot_pattern.png) repeat; }
+      background: rgba(0, 0, 0, 0.6) url(/img/admin/dot_pattern.png) repeat; }
     .timeline > li.color.transparent-black:nth-of-type(odd):after {
       border-left-color: rgba(0, 0, 0, 0.3); }
     .timeline > li.color.transparent-black:nth-of-type(even):after {
@@ -13029,7 +13029,7 @@ body #content.full-page {
   height: 100%;
   padding: 0 0 45px 0 !important;
   top: -45px;
-  background: url(../images/noise.png) left top repeat, url(../images/dot_pattern.png) left top repeat, url(../images/backgrounds/1.jpg) left top/cover no-repeat;
+  background: url(/img/admin/noise.png) left top repeat, url(/img/admin/dot_pattern.png) left top repeat, url(/img/admin/backgrounds/1.jpg) left top/cover no-repeat;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box; }
