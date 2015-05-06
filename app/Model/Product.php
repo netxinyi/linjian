@@ -11,4 +11,8 @@ class Product extends BaseModel {
 	protected $primaryKey = 'product_id';
 
 
+	public function category(){
+		return $this->belongsTo('App\Model\Category');
+	}
+
 }

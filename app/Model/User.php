@@ -11,4 +11,12 @@ class User extends BaseModel  {
 	protected $primaryKey = 'user_id';
 
 
+	public function __construct(){
+		self::creating(function($user){
+			dd($user);
+			$user->last_signin = date('Y-m-d H:i:s',time());
+		});
+	}
+
+
 }

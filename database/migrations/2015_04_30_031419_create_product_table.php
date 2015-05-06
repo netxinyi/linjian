@@ -72,15 +72,18 @@ class CreateProductTable extends Migration {
 		//分类表
 		Schema::create('category', function (Blueprint $table) {
 
-			$table->increments('categoty_id');
+			$table->increments('category_id');
 			$table->string('cat_name',60)->comment('分类名称');
 			$table->text('cat_description')->default('')->comment('分类简介');
 
 			$table->comment = '分类表';
 			$table->engine  = 'MyISAM';
 
-			$table->foreign('categoty_id')->references('categoty_id')->on('product')->onDelete('restrict');
+			$table->foreign('category_id')->references('category_id')->on('product')->onDelete('restrict');
 		});
+
+
+
 	}
 
 	/**

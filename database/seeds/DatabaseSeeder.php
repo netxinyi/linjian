@@ -14,7 +14,14 @@ class DatabaseSeeder extends Seeder {
 	{
 		Model::unguard();
 
-		// $this->call('UserTableSeeder');
+
+		App\Model\User::create(array(
+			'user_name'	=>	'vision',
+			'email'		=>	'521287718@qq.com',
+			'mobile'	=>	'17090025057',
+			'password'	=>	bcrypt('123456'),
+			'from'		=>	1
+		));
 	}
 
 }
