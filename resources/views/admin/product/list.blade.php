@@ -36,10 +36,11 @@
 
                       <!-- tile header -->
                       <div class="tile-header">
-                        <h1><strong>Projects</strong> Progress</h1>
+
                         <div class="search">
                           <input type="text" placeholder="Search...">
                         </div>
+
                         <div class="controls">
                           <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
                           <a href="#" class="remove"><i class="fa fa-times"></i></a>
@@ -59,24 +60,20 @@
                                 <th class="sortable">价格</th>
                                 <th class="sortable">品种</th>
                                 <th class="sortable">色系</th>
-                                <th class="sortable sort-amount">Status</th>
+                                <th class="sortable sort-amount">状态</th>
                                 <th class="text-right">操作</th>
                               </tr>
                             </thead>
                             <tbody>
                             @foreach($product_list as $key=>$val)
                               <tr>
-                                <td>1</td>
-                                <td>Graphic Layout for client</td>
-                                <td class="color-red priority">High priority</td>
-                                <td class="progress-cell">
-                                  <div class="progress-info">
-                                    <div class="percent"><span class="animate-number" data-value="50" data-animation-duration="1500">0</span>%</div>
-                                  </div>
-                                  <div class="progress progress-little">
-                                    <div class="progress-bar progress-bar-transparent-white animate-progress-bar" data-percentage="50%" style="width: 50%;"></div>
-                                  </div>
-                                </td>
+                                <td>{{($key + 1)}}</td>
+                                <td>{{$val->name}}</td>
+                                <td>{{$val->price}}</td>
+                                <td>{{$val->category_id}}</td>
+                                <td>{{$val->status}}</td>
+                                <td>{{$val->status}}</td>
+
                                 <td class="text-right"><span id="projectbar1"></span></td>
                               </tr>
                                 @endforeach
@@ -89,15 +86,7 @@
 
                       <!-- tile footer -->
                       <div class="tile-footer text-center">
-                        <ul class="pagination pagination-sm nomargin pagination-custom">
-                          <li class="disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
-                          <li class="active"><a href="#">1</a></li>
-                          <li><a href="#">2</a></li>
-                          <li><a href="#">3</a></li>
-                          <li><a href="#">4</a></li>
-                          <li><a href="#">5</a></li>
-                          <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-                        </ul>
+                        <?php echo $pagination->render();?>
                       </div>
                       <!-- /tile footer -->
 

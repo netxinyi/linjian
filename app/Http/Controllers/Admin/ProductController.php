@@ -2,14 +2,19 @@
 
 use App\Http\Controllers\Controller;
 use App\Model\Product;
+use App\Services\Pagination;
 
 class ProductController extends Controller {
 
 
 	public function showList()
 	{
-
-		return view('admin.product.list');
+        $product_list = Product::paginate(1);
+        $pagination = new Pagination($product_list);
+		return view('admin.product.list')->with(array(
+            'product_list'  => $product_list,
+            'pagination'    =>  $pagination
+        ));
 	}
 
 	public function showAdd()
