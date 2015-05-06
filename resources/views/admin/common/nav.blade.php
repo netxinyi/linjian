@@ -5,8 +5,8 @@
 
     <!-- Branding -->
     <div class="navbar-header col-md-2">
-        <a class="navbar-brand" href="index.html">
-            <strong>MIN</strong>IMAL
+        <a class="navbar-brand" href="{{route('admin.index')}}">
+            <strong>林间小溪</strong>
         </a>
         <div class="sidebar-collapse">
             <a href="#">
@@ -30,7 +30,7 @@
 
         <!-- Search -->
         <div class="search" id="main-search">
-            <i class="fa fa-search"></i> <input type="text" placeholder="Search...">
+            <input type="text" placeholder="Search..."><i class="fa fa-search"></i>
         </div>
         <!-- Search end -->
 
@@ -336,150 +336,20 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-twitter"></i>
-                            产品管理 <b class="fa fa-plus dropdown-plus"></b>
+                            鹦鹉管理 <b class="fa fa-plus dropdown-plus"></b>
                         </a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="{{route('admin.product')}}">
-                                    <i class="fa fa-caret-right"></i> 产品列表
+                                    <i class="fa fa-caret-right"></i> 鹦鹉列表
                                 </a>
                             </li>
                             <li>
                                 <a href="{{route('admin.product.add')}}">
-                                    <i class="fa fa-caret-right"></i>添加产品
+                                    <i class="fa fa-caret-right"></i>添加鹦鹉
                                 </a>
                             </li>
                         </ul>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-pencil"></i> Interface <b class="fa fa-plus dropdown-plus"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="ui-elements.html">
-                                    <i class="fa fa-caret-right"></i> UI Elements
-                                </a>
-                            </li>
-                            <li>
-                                <a href="typography.html">
-                                    <i class="fa fa-caret-right"></i> Typography
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tiles.html">
-                                    <i class="fa fa-caret-right"></i> Tiles
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="buttons.html">
-                            <i class="fa fa-tint"></i> Buttons & Icons
-                        </a>
-                    </li>
-                    <li>
-                        <a href="grid.html">
-                            <i class="fa fa-th"></i> Grid Layout
-                        </a>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-th-large"></i> Tables <b class="fa fa-plus dropdown-plus"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="tables.html">
-                                    <i class="fa fa-caret-right"></i> Bootstrap Tables
-                                </a>
-                            </li>
-                            <li>
-                                <a href="datatables.html">
-                                    <i class="fa fa-caret-right"></i> DataTables
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-desktop"></i> Example Pages <b class="fa fa-plus dropdown-plus"></b>
-                            <span class="label label-greensea">mails</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="login.html">
-                                    <i class="fa fa-caret-right"></i> Login Page
-                                </a>
-                            </li>
-                            <li>
-                                <a href="calendar.html">
-                                    <i class="fa fa-caret-right"></i> Calendar
-                                </a>
-                            </li>
-                            <li>
-                                <a href="page404.html">
-                                    <i class="fa fa-caret-right"></i> Page 404
-                                </a>
-                            </li>
-                            <li>
-                                <a href="page500.html">
-                                    <i class="fa fa-caret-right"></i> Page 500
-                                </a>
-                            </li>
-                            <li>
-                                <a href="page-offline.html">
-                                    <i class="fa fa-caret-right"></i> Page Offline
-                                </a>
-                            </li>
-                            <li>
-                                <a href="gallery.html">
-                                    <i class="fa fa-caret-right"></i> Gallery
-                                </a>
-                            </li>
-                            <li>
-                                <a href="timeline.html">
-                                    <i class="fa fa-caret-right"></i> Timeline
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mail.html">
-                                    <i class="fa fa-caret-right"></i> Vertical Mail
-                                    <span class="badge badge-red">5</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mail-horizontal.html">
-                                    <i class="fa fa-caret-right"></i> Horizontal Mail
-                                    <span class="label label-greensea">mails</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="vector-maps.html">
-                                    <i class="fa fa-caret-right"></i> Vector Maps
-                                </a>
-                            </li>
-                            <li>
-                                <a href="google-maps.html">
-                                    <i class="fa fa-caret-right"></i> Google Maps
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="widgets.html">
-                            <i class="fa fa-play-circle"></i> Widgets
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="charts.html">
-                            <i class="fa fa-bar-chart-o"></i> Charts & Graphs
-                        </a>
                     </li>
 
 
