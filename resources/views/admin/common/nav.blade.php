@@ -16,8 +16,6 @@
     </div>
     <!-- Branding end -->
 
-    <div class="copyrights">Collect from <a href="http://www.17sucai.com/"  title="网站模板">网站模板</a></div>
-
 
     <!-- .nav-collapse -->
     <div class="navbar-collapse">
@@ -323,42 +321,32 @@
         <!-- Sidebar -->
         <ul class="nav navbar-nav side-nav" id="sidebar">
 
-            <li class="collapsed-content">
-                <ul>
-                    <li class="search"><!-- Collapsed search pasting here at 768px --></li>
-                </ul>
-            </li>
 
             <li class="navigation" id="navigation">
-                <a href="#" class="sidebar-toggle" data-toggle="#navigation">Navigation <i class="fa fa-angle-up"></i></a>
+                <a href="#" class="sidebar-toggle" data-toggle="#navigation">菜单<i class="fa fa-angle-up"></i></a>
 
                 <ul class="menu">
 
                     <li class="active">
-                        <a href="index.html">
-                            <i class="fa fa-tachometer"></i> Dashboard
-                            <span class="badge badge-red">1</span>
+                        <a href="{{route('admin.index')}}">
+                            <i class="fa fa-home"></i> 首页
                         </a>
                     </li>
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-list"></i> Forms <b class="fa fa-plus dropdown-plus"></b>
+                            <i class="fa fa-twitter"></i>
+                            产品管理 <b class="fa fa-plus dropdown-plus"></b>
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="form-elements.html">
-                                    <i class="fa fa-caret-right"></i> Common Elements
+                                <a href="{{route('admin.product')}}">
+                                    <i class="fa fa-caret-right"></i> 产品列表
                                 </a>
                             </li>
                             <li>
-                                <a href="validation-elements.html">
-                                    <i class="fa fa-caret-right"></i> Validation
-                                </a>
-                            </li>
-                            <li>
-                                <a href="form-wizard.html">
-                                    <i class="fa fa-caret-right"></i> Form Wizard
+                                <a href="{{route('admin.product.add')}}">
+                                    <i class="fa fa-caret-right"></i>添加产品
                                 </a>
                             </li>
                         </ul>
@@ -498,64 +486,6 @@
                 </ul>
 
             </li>
-
-            <li class="summary" id="order-summary">
-                <a href="#" class="sidebar-toggle underline" data-toggle="#order-summary">Orders Summary <i class="fa fa-angle-up"></i></a>
-
-                <div class="media">
-                    <a class="pull-right" href="#">
-                        <span id="sales-chart"></span>
-                    </a>
-                    <div class="media-body">
-                        This week sales
-                        <h3 class="media-heading">26, 149</h3>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <a class="pull-right" href="#">
-                        <span id="balance-chart"></span>
-                    </a>
-                    <div class="media-body">
-                        This week balance
-                        <h3 class="media-heading">318, 651</h3>
-                    </div>
-                </div>
-
-            </li>
-
-            <li class="settings" id="general-settings">
-                <a href="#" class="sidebar-toggle underline" data-toggle="#general-settings">General Settings <i class="fa fa-angle-up"></i></a>
-
-                <div class="form-group">
-                    <label class="col-xs-8 control-label">Switch ON</label>
-                    <div class="col-xs-4 control-label">
-                        <div class="onoffswitch greensea">
-                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch-on" checked="">
-                            <label class="onoffswitch-label" for="switch-on">
-                                <span class="onoffswitch-inner"></span>
-                                <span class="onoffswitch-switch"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-xs-8 control-label">Switch OFF</label>
-                    <div class="col-xs-4 control-label">
-                        <div class="onoffswitch greensea">
-                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch-off">
-                            <label class="onoffswitch-label" for="switch-off">
-                                <span class="onoffswitch-inner"></span>
-                                <span class="onoffswitch-switch"></span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-            </li>
-
-
         </ul>
         <!-- Sidebar end -->
 

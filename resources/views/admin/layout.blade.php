@@ -13,8 +13,6 @@
 @stop
 
 @section('header-global-js')
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="/js/common/html5shiv.js"></script>
     <script src="/js/common/respond.min.js"></script>
@@ -26,7 +24,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="/lib/jquery/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/lib/jquery/mmenu/jquery.mmenu.min.js"></script>
     <script type="text/javascript" src="/lib/jquery/nicescroll/jquery.nicescroll.min.js"></script>
     <script type="text/javascript" src="/lib/jquery/blockui/jquery.blockUI.js"></script>

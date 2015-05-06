@@ -35,7 +35,10 @@ class CreateOrderTable extends Migration {
 			$table->decimal('ship_price')->default(0)->comment('运费');
 			$table->tinyInteger('pay_id')->comment('支付方式ID');
 			$table->decimal('paid')->default(0)->comment('已支付多少');
+			//时间维护
 			$table->timestamps();
+			//软删除
+			$table->softDeletes();
 
 			$table->index(array('user_id','order_sn','status'));
 			$table->unique('order_sn');

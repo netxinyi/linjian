@@ -23,7 +23,10 @@ class CreateUserTable extends Migration {
 			$table->tinyInteger('from')->default(0)->comment('来源');
 			$table->timestamp('last_signin')->comment('最后登录时间');
 			$table->rememberToken()->comment('token');
+			//时间维护
 			$table->timestamps();
+			//软删除
+			$table->softDeletes();
 
 			$table->index('user_name');
 			$table->unique(array('user_name','email','mobile'));

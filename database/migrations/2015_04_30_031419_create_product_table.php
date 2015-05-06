@@ -26,6 +26,10 @@ class CreateProductTable extends Migration {
 			$table->comment = '产品表';
 			$table->engine  = 'InnoDB';
 
+			//时间维护
+			$table->timestamps();
+			//软删除
+			$table->softDeletes();
 			$table->index(array('category_id','status'));
 
 		});
