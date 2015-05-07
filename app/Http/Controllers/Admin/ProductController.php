@@ -9,7 +9,7 @@ class ProductController extends Controller {
 
 	public function showList()
 	{
-        $product_list = Product::paginate(1);
+        $product_list = Product::paginate(15);
         $pagination = new Pagination($product_list);
 		return view('admin.product.list')->with(array(
             'product_list'  => $product_list,
