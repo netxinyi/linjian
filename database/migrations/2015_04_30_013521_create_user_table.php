@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use App\Enum\UserEnum;
 
 class CreateUserTable extends Migration {
 
@@ -20,7 +21,7 @@ class CreateUserTable extends Migration {
 			$table->string('email',100)->comment('用户邮箱');
 			$table->string('mobile',11)->comment('用户手机号');
 			$table->string('password', 60)->comment('用户密码');
-			$table->tinyInteger('from')->default(0)->comment('来源');
+			$table->tinyInteger('from')->default(1)->comment('来源');
 			$table->timestamp('last_signin')->comment('最后登录时间');
 			$table->rememberToken()->comment('token');
 			//时间维护
@@ -39,19 +40,22 @@ class CreateUserTable extends Migration {
 		//用户资料表
 		Schema::create('user_info', function(Blueprint $table)
 		{
-			$table->increments('user_id')->comment('用户ID');
+			$table->unsignedInteger('user_id')->comment('用户ID');
 			//0.女
 			//1.男
 			//2.保密
-			$table->enum('sex', array(0,1,2))->default(2)->comment('性别');
+			$table->enum('sex', array(UserEnum::SEX_FEMALE,UserEnum::SEX_MALE,UserEnum::SEX_UNKNOWN))->default(UserEnum::SEX_UNKNOWN)->comment('性别');
 
-			$table->string('qq', 12)->default('')->comment('QQ号');
-			$table->string('province', 100)->default('')->comment('省份');
-			$table->string('city', 100)->default('')->comment('城市');
-			$table->string('address')->default('')->comment('详细地址');
+			$table->string('qq', 12)->nullable()->comment('QQ号');
+			$table->string('province', 100)->nullable()->comment('省份');
+			$table->string('city', 100)->nullable()->comment('城市');
+			$table->string('address')->nullable()->comment('详细地址');
 
 			$table->comment = '用户信息表';
 			$table->engine = 'InnoDB';
+
+			//主键
+			$table->primary('user_id');
 			//外键
 			$table->foreign('user_id')->references('user_id')->on('user')->onDelete('cascade');
 
@@ -62,7 +66,7 @@ class CreateUserTable extends Migration {
 			$table->increments('id');
 			//1.激活
 			//2.改密码
-			$table->enum('type',array(1,2))->comment('类型');
+			$table->enum('type',array(UserEnum::TOKEN_TYPE_EMAIL,UserEnum::TOKEN_TYPE_MOBILE,UserEnum::TOKEN_TYPE_UPPWD))->comment('类型');
 			$table->string('email')->comment('邮箱');
 			$table->string('token')->comment('令牌');
 

@@ -3,14 +3,14 @@
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Enum\UserEnum;
 
-class User extends BaseModel  {
+class UserInfo extends BaseModel  {
 
-	use SoftDeletes;
 
-	protected $table = 'user';
+
+	protected $table = 'user_info';
 
 	protected $primaryKey = 'user_id';
-	protected $guarded = [];
+	public $timestamps = false;
 
 
 

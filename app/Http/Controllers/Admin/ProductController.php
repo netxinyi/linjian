@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Controller;
 use App\Model\Product;
+use App\Services\UserService;
 
 use App\Services\Pagination;
 
@@ -11,6 +12,9 @@ class ProductController extends Controller {
 
 	public function showList()
 	{
+
+		UserService::addUser('vision','vision.shi@yunzhihui.com','17090025057','123456');
+
         $product_list = Product::paginate(15);
         $pagination = new Pagination($product_list);
 		return view('admin.product.list')->with(array(

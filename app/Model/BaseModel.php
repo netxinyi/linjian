@@ -1,10 +1,10 @@
 <?php namespace App\Model;
 
-use Eloquent;
+use Illuminate\Database\Eloquent\Model;
+use DB;
 
 
-
-class BaseModel extends Eloquent {
+abstract class BaseModel extends Model {
 
 
 

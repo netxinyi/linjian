@@ -54,17 +54,21 @@ class Pagination implements PresenterContract {
 	 */
 	public function render()
 	{
+
+
 		if ($this->hasPages())
 		{
-			return sprintf(
-				'<ul class="pagination pagination-sm nomargin pagination-custom">%s %s %s</ul>',
-				$this->getPreviousButton(),
-				$this->getLinks(),
-				$this->getNextButton()
-			);
+			$links = $this->getLinks();
+		}else{
+			$links = $this->getDisabledTextWrapper('1');
 		}
 
-		return '';
+		return sprintf(
+			'<ul class="pagination pagination-sm nomargin pagination-custom">%s %s %s</ul>',
+			$this->getPreviousButton(),
+			$links,
+			$this->getNextButton()
+		);
 	}
 
 	/**

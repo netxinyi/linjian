@@ -51,5 +51,6 @@ $app->singleton(
 | from the actual running of the application and sending responses.
 |
 */
-
+//自动加载 - 自定义函数
+require_once(app_path('functions.php'));
 return $app;
