@@ -7857,7 +7857,9 @@ body #content .modal .modal-dialog .modal-content .input-group .form-control:not
 /************* PAGE HEADER **************/
 /****************************************/
 .pageheader {
-  position: relative; }
+  position: relative;
+  height: 40px;
+}
   .pageheader h2 {
     display: inline-block;
     color: rgba(255, 255, 255, 0.8);
@@ -7885,8 +7887,7 @@ body #content .modal .modal-dialog .modal-content .input-group .form-control:not
     display: inline-block;
     vertical-align: top;
     position: absolute;
-    right: 0;
-    top: 0; }
+    top: 10px; }
     .pageheader .breadcrumbs ol.breadcrumb {
       background-color: transparent;
       margin-bottom: 0; }
