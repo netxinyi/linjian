@@ -13672,7 +13672,9 @@ body #content.full-page.error .search {
         width: 1%; }
     body .pageheader {
       text-align: center;
-      position: static; }
+      position: static;
+     margin-top:20px;
+    }
       body .pageheader h2 {
         display: block;
         font-size: 26px; }

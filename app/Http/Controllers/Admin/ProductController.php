@@ -13,7 +13,7 @@ class ProductController extends Controller {
 	public function showList()
 	{
 
-		UserService::addUser('vision','vision.shi@yunzhihui.com','17090025057','123456');
+
 
         $product_list = Product::paginate(15);
         $pagination = new Pagination($product_list);
