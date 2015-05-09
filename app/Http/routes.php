@@ -5,7 +5,10 @@
 Route::bind('product_id',function($value){
 	return App\Model\Product::find($value);
 });
-
+//模型绑定-Category
+Route::bind('category_id',function($value){
+    return App\Model\Category::find($value);
+});
 //模型绑定-User
 Route::bind('user_id',function($value){
 	return App\Model\User::find($value);
@@ -68,14 +71,25 @@ Route::group(array('prefix'=>'admin','namespace'=>'Admin'), function(){
 
 			Route::get('/add',array('as'=>'admin.product.add','uses'=>'ProductController@showAdd'));
 
-
 			Route::get('/edit/{product_id}',array('uses'=>'ProductController@showEdit'));
 
+            Route::get('/attr',array('as'=>'admin.product.attr','uses'=>'ProductController@showAttr'));
 
 
 		});
 
+        Route::group(array('prefix'=>'category'),function(){
 
+
+            Route::get('/',array('as'=>'admin.category','uses'=>'CategoryController@showList'));
+
+            Route::get('/add',array('as'=>'admin.category.add','uses'=>'CategoryController@showAdd'));
+
+            Route::get('/edit/{category_id}',array('uses'=>'CategoryController@showEdit'));
+
+
+
+        });
 
 
 

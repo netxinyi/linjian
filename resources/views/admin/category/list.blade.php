@@ -1,7 +1,7 @@
 @extends('admin.layout')
 
 @section('title')
-鹦鹉列表
+分类列表
 @stop
 @section('body')
     <!-- page header -->
@@ -10,8 +10,8 @@
             <ol class="breadcrumb">
                 <li>当前位置</li>
                 <li><a href="{{route('admin.index')}}">后台管理</a></li>
-                <li><a href="{{route('admin.product')}}">鹦鹉管理</a></li>
-                <li class="active">鹦鹉列表</li>
+                <li><a href="{{route('admin.category')}}">分类管理</a></li>
+                <li class="active">分类列表</li>
             </ol>
         </div>
     </div>
@@ -56,23 +56,17 @@
                             <thead>
                               <tr>
                                 <th class="sortable">序号</th>
-                                <th class="sortable">标题</th>
-                                <th class="sortable">价格</th>
-                                <th class="sortable">品种</th>
-                                <th class="sortable">色系</th>
-                                <th class="sortable sort-amount">状态</th>
+                                <th class="sortable">分类名称</th>
+                                <th class="sortable">分类简介</th>
                                 <th class="text-right">操作</th>
                               </tr>
                             </thead>
                             <tbody>
-                            @foreach($product_list as $key=>$val)
+                            @foreach($categories as $key=>$val)
                               <tr>
                                 <td>{{($key + 1)}}</td>
-                                <td>{{$val->name}}</td>
-                                <td>{{$val->price}}</td>
-                                <td>{{$val->category->cat_name}}</td>
-                                <td>{{$val->attr(1)}}</td>
-                                <td>{{$val->status_lang()}}</td>
+                                <td>{{$val->cat_name}}</td>
+                                <td>{{$val->cat_description}}</td>
 
                                 <td class="text-right"><span id="projectbar1"></span></td>
                               </tr>

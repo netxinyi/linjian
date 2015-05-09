@@ -366,10 +366,31 @@
                         <i class="fa fa-caret-right"></i> 添加鹦鹉
                     </a>
                 </li>
+                <li>
+                    <a href="{{route('admin.product.attr')}}">
+                        <i class="fa fa-caret-right"></i> 属性管理
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-list"></i> 分类管理 <b class="fa fa-plus dropdown-plus"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="{{route('admin.category')}}">
+                        <i class="fa fa-caret-right"></i> 分类列表
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('admin.category.add')}}">
+                        <i class="fa fa-caret-right"></i> 添加分类
+                    </a>
+                </li>
 
             </ul>
         </li>
-
 
 
     </ul>

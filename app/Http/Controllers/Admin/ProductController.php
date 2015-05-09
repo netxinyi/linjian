@@ -5,17 +5,15 @@ use App\Model\Product;
 use App\Services\UserService;
 
 use App\Services\Pagination;
-
+use DB;
 
 class ProductController extends Controller {
 
 
 	public function showList()
 	{
-
-
-
-        $product_list = Product::paginate(15);
+        DB::enableQueryLog();
+        $product_list = Product::with('attrs','category')->paginate(15);
         $pagination = new Pagination($product_list);
 		return view('admin.product.list')->with(array(
             'product_list'  => $product_list,
@@ -32,6 +30,10 @@ class ProductController extends Controller {
 	{
 		return view('admin.product.add')->with(compact($product));
 	}
+
+    public function __destruct(){
+
+    }
 }
 
 

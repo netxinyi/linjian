@@ -7313,8 +7313,8 @@ body #content .checkbox input[type=checkbox].parsley-success + label::before,
 body #content .modal .modal-dialog .modal-content .checkbox input[type=checkbox].parsley-success + label::before {
   background-color: #fbffeb;
   border: 1px solid #e9ff9f; }
-body #content .parsley-error-list,
-body #content .modal .modal-dialog .modal-content .parsley-error-list {
+body #content .parsley-errors-list,
+body #content .modal .modal-dialog .modal-content .parsley-errors-list {
   list-style-type: none;
   padding: 0;
   font-size: 11px; }

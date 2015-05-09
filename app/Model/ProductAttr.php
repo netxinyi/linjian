@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ProductAttr extends BaseModel {
 
-	use SoftDeletes;
+
 
 	protected $table = 'product_attr';
 
@@ -12,4 +12,7 @@ class ProductAttr extends BaseModel {
 
 
 
+    public function product(){
+        return $this->belongsTo('App\Model\Poroduct');
+    }
 }
