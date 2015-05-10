@@ -37,9 +37,6 @@
                       <!-- tile header -->
                       <div class="tile-header">
 
-                        <div class="search">
-                          <input type="text" placeholder="Search...">
-                        </div>
 
                         <div class="controls">
                           <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
@@ -55,20 +52,25 @@
                           <table class="table table-custom table-sortable nomargin">
                             <thead>
                               <tr>
-                                <th class="sortable">序号</th>
+
+                                <th class="sortable sort-asc">分类ID</th>
                                 <th class="sortable">分类名称</th>
-                                <th class="sortable">分类简介</th>
-                                <th class="text-right">操作</th>
+                                <th>鹦鹉数量</th>
+                                <th>分类简介</th>
+                                <th class="text-center">操作</th>
                               </tr>
                             </thead>
                             <tbody>
                             @foreach($categories as $key=>$val)
                               <tr>
-                                <td>{{($key + 1)}}</td>
+                                <td>{{$val->category_id}}</td>
                                 <td>{{$val->cat_name}}</td>
+                                 <td>{{count($val->products)}}</td>
                                 <td>{{$val->cat_description}}</td>
-
-                                <td class="text-right"><span id="projectbar1"></span></td>
+                                <td class="actions text-center">
+                                    <a href="{{route('admin.category.edit',array($val->category_id))}}" class="edit">编辑<i class="fa fa-edit"></i> </a>
+                                    <a href="#" class="delete">删除<i class="fa fa-times"></i> </a>
+                                </td>
                               </tr>
                                 @endforeach
                             </tbody>

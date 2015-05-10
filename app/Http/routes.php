@@ -69,7 +69,7 @@ Route::group(array('prefix'=>'admin','namespace'=>'Admin'), function(){
 
 			Route::get('/',array('as'=>'admin.product','uses'=>'ProductController@showList'));
 
-			Route::get('/add',array('as'=>'admin.product.add','uses'=>'ProductController@showAdd'));
+			Route::get('/add',array('as'=>'admin.product.add','uses'=>'ProductController@showAdd','middleware'=>'VerifyCsrfToken'));
 
 			Route::get('/edit/{product_id}',array('uses'=>'ProductController@showEdit'));
 
@@ -84,8 +84,10 @@ Route::group(array('prefix'=>'admin','namespace'=>'Admin'), function(){
             Route::get('/',array('as'=>'admin.category','uses'=>'CategoryController@showList'));
 
             Route::get('/add',array('as'=>'admin.category.add','uses'=>'CategoryController@showAdd'));
+            Route::post('/add',array('as'=>'admin.category.doAdd','uses'=>'CategoryController@doAdd'));
 
-            Route::get('/edit/{category_id}',array('uses'=>'CategoryController@showEdit'));
+            Route::get('/edit/{category_id}',array('as'=>'admin.category.edit','uses'=>'CategoryController@showEdit'));
+            Route::post('/edit/{category_id}',array('as'=>'admin.category.doEdit','uses'=>'CategoryController@doEdit'));
 
 
 

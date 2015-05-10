@@ -78,7 +78,7 @@ class CreateProductTable extends Migration {
 
 			$table->comment = '分类表';
 			$table->engine  = 'MyISAM';
-
+            $table->unique(array('cat_name'));
 			$table->foreign('category_id')->references('category_id')->on('product')->onDelete('restrict');
 		});
 
