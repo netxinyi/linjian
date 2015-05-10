@@ -15,7 +15,6 @@ class CategoryController extends Controller {
 
         $categories = Category::with('products')->paginate(15);
 
-
         $pagination = new Pagination($categories);
 		return view('admin.category.list')->with(array(
             'categories'  => $categories,
@@ -64,6 +63,22 @@ class CategoryController extends Controller {
             return redirect()->route('admin.category.edit',array($category))->with('success', '分类修改成功！');
         }
         return redirect()->route('admin.category.edit',array($category))->withErrors('抱歉，修改失败')->withInput();
+    }
+
+    public function doDelete(Category $category)
+    {
+
+
+        if($category->productNumber() > 0){
+           // dd('该分类有产品不能删除');
+            return redirect()->route('admin.category')->with('error','抱歉，该分类有产品不能删除');
+
+        }elseif($category->delete()){
+            return redirect()->route('admin.category')->with('success','删除成功');
+        }else{
+            dd('删除失败');
+            return redirect()->route('admin.category')->with('error','抱歉，删除失败');
+        }
     }
     public function __destruct(){
 

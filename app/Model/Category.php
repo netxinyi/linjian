@@ -16,5 +16,8 @@ class Category extends BaseModel {
         return $this->hasMany('App\Model\Product');
     }
 
-
+    public function productNumber()
+    {
+        return $this->hasMany('App\Model\Product')->count();
+    }
 }

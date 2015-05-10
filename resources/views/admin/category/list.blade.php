@@ -49,6 +49,21 @@
                       <!-- tile body -->
                       <div class="tile-body no-vpadding">
                         <div class="table-responsive">
+
+                                @if(session('success'))
+                                     <div class="alert alert-greensea alert-dismissable">
+                                          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                          {{session('success')}}
+                                        </div>
+                                @elseif(session('error'))
+
+                                         <div class="alert alert-red alert-dismissable">
+                                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                              <strong>错误：</strong>{{session('error')}}
+                                         </div>
+
+                                @endif
+
                           <table class="table table-custom table-sortable nomargin">
                             <thead>
                               <tr>
@@ -69,7 +84,7 @@
                                 <td>{{$val->cat_description}}</td>
                                 <td class="actions text-center">
                                     <a href="{{route('admin.category.edit',array($val->category_id))}}" class="edit">编辑<i class="fa fa-edit"></i> </a>
-                                    <a href="#" class="delete">删除<i class="fa fa-times"></i> </a>
+                                    <a href="{{route('admin.category.delete',array($val->category_id))}}" class="delete">删除<i class="fa fa-times"></i> </a>
                                 </td>
                               </tr>
                                 @endforeach
@@ -118,4 +133,10 @@
               </div>
               <!-- /content container -->
 
+@stop
+
+@section('footer-last-js')
+    <script type="text/javascript">
+
+    </script>
 @stop

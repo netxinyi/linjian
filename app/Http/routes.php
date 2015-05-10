@@ -89,6 +89,8 @@ Route::group(array('prefix'=>'admin','namespace'=>'Admin'), function(){
             Route::get('/edit/{category_id}',array('as'=>'admin.category.edit','uses'=>'CategoryController@showEdit'));
             Route::post('/edit/{category_id}',array('as'=>'admin.category.doEdit','uses'=>'CategoryController@doEdit'));
 
+            Route::get('/delete/{category_id}',array('as'=>'admin.category.delete','uses'=>'CategoryController@doDelete'));
+
 
 
         });
