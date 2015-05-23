@@ -16,10 +16,12 @@ class CreateProductTable extends Migration {
 		Schema::create('product', function (Blueprint $table) {
 
 			$table->increments('product_id')->comment('产品ID');
+            $table->char('product_sn',8)->comment('商品编号');
 			$table->string('name')->comment('产品名称');
 			$table->string('title')->comment('副标题');
 			$table->longText('description')->comment('产品详细描述');
 			$table->unsignedInteger('category_id')->comment('分类ID');
+			$table->unsignedInteger('type_id')->comment('分类ID');
 			$table->enum('status',array(0,1,2,3,4,5))->comment('状态');
 			$table->decimal('price')->comment('价格');
 
@@ -31,8 +33,19 @@ class CreateProductTable extends Migration {
 			//软删除
 			$table->softDeletes();
 			$table->index(array('category_id','status'));
-
 		});
+
+        //产品类型
+        Schema::create('product_types', function (Blueprint $table) {
+
+            $table->increments('type_id')->comment('类型ID');
+            $table->string('name')->comment('类型名称');
+
+            $table->comment = '产品类型';
+            $table->engine  = 'MyISAM';
+        });
+
+
 		//属性表
 		Schema::create('attribute', function (Blueprint $table) {
 
